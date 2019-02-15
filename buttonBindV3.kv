@@ -1,0 +1,8 @@
+# buttonBindV3.kv
+
+<GridLayout>:
+    cols: 2
+    Button:
+        text : str(app.clickCounterProperty)
+        background_color : [1,0,0,1]
+        on_press: app.update()
