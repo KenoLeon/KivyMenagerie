@@ -1,0 +1,21 @@
+# actionBar.kv
+
+<ActionBar>:
+    pos_hint: {'top':1}
+    ActionView:
+        use_separator: True
+        ActionPrevious:
+            app_icon: ''
+            title: 'Such Action'
+            with_previous: False
+        ActionOverflow:
+        ActionButton:
+            text: 'Btn2'
+        ActionButton:
+            text: 'Btn3'
+        ActionGroup:
+            text: 'Group1'
+            ActionButton:
+                text: 'Btn5'
+            ActionButton:
+                text: 'Btn6'
